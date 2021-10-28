@@ -53,3 +53,9 @@ button {
 	color: #fff;
 	padding: 8px;
 }
+
+.icon {
+	text-align: center;
+	padding: 1rem;
+	height: 12rem;
+}
