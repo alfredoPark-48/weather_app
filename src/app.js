@@ -28,17 +28,17 @@ app.get('', (req, res) => {
   });
 });
 
-app.get('/about', (req, res) => {
+app.get('/about', async (req, res) => {
   res.render('about', {
     title: 'About Me',
     name: 'Alfredo Jeong Hyun Park',
   });
 });
 
-app.get('/help', (req, res) => {
-  res.render('help', {
-    text: "I literally couldn't come up with a better placeholder text.",
-    title: 'Help',
+app.get('/github', (req, res) => {
+  res.render('github', {
+    text: 'https://github.com/alfredoPark-48/weather_app',
+    title: 'GitHub',
     name: 'Alfredo Jeong Hyun Park',
   });
 });
@@ -65,32 +65,6 @@ app.get('/weather', (req, res) => {
         forecast: data,
       });
     });
-  });
-
-  // res.send({
-  // 	location: geocode.location,
-  // 	address: req.query.address,
-  // 	forecast: 20,
-  // });
-});
-
-app.get('/products', (req, res) => {
-  if (!req.query.search) {
-    return res.send({
-      error: 'You must provide a search term!',
-    });
-  }
-  console.log(req.query.search);
-  res.send({
-    products: [],
-  });
-});
-
-app.get('help/*', (req, res) => {
-  res.render('404', {
-    title: 'Error',
-    error: 'Help article not found',
-    name: 'Alfredo Park',
   });
 });
 
