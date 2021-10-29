@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700;900&display=swap');
 
 body {
-  color: #333333;
+  background-color: #181a1b;
+  color: #fff;
   font-family: 'Lato', sans-serif;
   margin: 0 auto;
   padding: 0 16px;
@@ -26,9 +27,8 @@ a {
 }
 
 footer {
-  background-color: #333333;
+  background-color: #262a2b;
   color: #eeeeee;
-  border-top: 1px solid #eeeeee;
   margin-top: 16px;
   padding: 16px;
 }
@@ -36,7 +36,7 @@ footer {
 header {
   padding: 0 1rem 0.5rem;
   color: #eeeeee;
-  background-color: #333333;
+  background-color: #262a2b;
 }
 
 h1 {
@@ -55,7 +55,6 @@ header a {
 input {
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
-  border: 1px solid #cccccc;
   padding: 8px;
 }
 
