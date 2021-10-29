@@ -1,4 +1,3 @@
-const baseModule = require('hbs');
 const request = require('request');
 
 const forecast = (latitude, longitude, callback) => {
